@@ -43,9 +43,9 @@ criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr= 0.001)
 
 data_root = './dataset/dataset/PetImages'
-# Data Preprocessing
+# Data Preprocessing, if without resizing image data, it will have tensor stack error while training in Dataloader
 transforms = transforms.Compose([
-             transforms.Resize(64),
+             transforms.Resize([64,64]),
              transforms.ToTensor(),
              transforms.Normalize((0.485,0.456,0.406),(0.229,0.224,0.225))
 ])
