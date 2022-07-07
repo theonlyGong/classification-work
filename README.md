@@ -16,7 +16,7 @@ Note:
 I used sampler in DataLoader function, definitely this part can be utlized as DataLoader(dataset,shuffle = True, batch_size = 32).
 
 In addition, you can select to use resnet to improve classification efficiency. Considering this network is not deep, I practiced handwriting network structure.
-If you would like to use resnet from torchvision.models,that's much more convienient,such as:
+If you would like to use resnet from torchvision.models,that's much more convienient instead of building network structure yourself,such as:
 
 model = torchvision.models.resnet18()
 
