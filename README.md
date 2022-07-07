@@ -6,9 +6,6 @@ Practice & progress from building Convolutional Neural Network(CNN) --> Looking 
 
 ## Dataset was from Kaggle: <https://www.kaggle.com/datasets/karakaggle/kaggle-cat-vs-dog-dataset>
 
-=========================================Introduction===========================================
-
-
 In this basic classification practice, I used an ez structured CNN to extract hand-crafted features and a single 2-class FC layer to finish the classfication work based on cats vs dogs dataset. Details were listed in the py file. This code included classfication, saving the best-result pth model and plotting the accuracy plot when training epochs increase.
 
 Note: 
@@ -25,5 +22,4 @@ num_in_features = model.fc.infeatures
 model.fc = nn.Linear(num_in_features,2)
 
 model.to(device)
-
-============================================================================================
+------------------------------------------------------------------------------------------
