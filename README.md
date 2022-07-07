@@ -22,4 +22,5 @@ num_in_features = model.fc.infeatures
 model.fc = nn.Linear(num_in_features,2)
 
 model.to(device)
+
 ------------------------------------------------------------------------------------------
