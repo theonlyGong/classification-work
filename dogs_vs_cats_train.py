@@ -111,9 +111,5 @@ for epoch in range(100):
     end_time = time.time()
     loading_time = end_time - start_time
     print('Accuracy:{},Time cost:{}'.format(accuracy,loading_time))
-    Accuracy.append(accuracy)
-
-    plt.figure()
-    plt.plot(Epoch,Accuracy,color = 'red',label = 'Accuracy')
-    plt.show()
+    
 
